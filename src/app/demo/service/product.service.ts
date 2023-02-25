@@ -34,4 +34,10 @@ export class ProductService {
             .then(res => res.data as Product[])
             .then(data => data);
     }
+
+    getProductsByCategory(category: string) {
+        return this.http.get<Product[]>(`https://fakestoreapi.com/products/category/${category}`).subscribe( () => {
+            
+        })
+    }
 }

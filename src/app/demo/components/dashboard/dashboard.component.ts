@@ -7,6 +7,11 @@ import { LayoutService } from 'src/app/layout/service/app.layout.service';
 
 @Component({
     templateUrl: './dashboard.component.html',
+    styles: [
+        `
+        .grow { transition: all .2s ease-in-out; }
+        .grow:hover { transform: scale(1.05); }`
+    ]
 })
 export class DashboardComponent implements OnInit, OnDestroy {
 
