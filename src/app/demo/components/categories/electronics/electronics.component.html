@@ -1,1 +1,4 @@
-<p>electronics works!</p>
+<div *ngFor="let product of products">
+    <h1>{{ product.title }}</h1>
+    <img [src]="product.image">
+</div>
