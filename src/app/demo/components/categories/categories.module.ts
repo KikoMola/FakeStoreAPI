@@ -6,6 +6,7 @@ import { JewelryComponent } from './jewelry/jewelry.component';
 import { ElectronicsComponent } from './electronics/electronics.component';
 import { MenClothingComponent } from './men-clothing/men-clothing.component';
 import { WomenClothingComponent } from './women-clothing/women-clothing.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
     declarations: [
@@ -14,6 +15,7 @@ import { WomenClothingComponent } from './women-clothing/women-clothing.componen
         ElectronicsComponent,
         MenClothingComponent,
         WomenClothingComponent,
+        ProductComponent,
     ],
     imports: [CommonModule, CategoriesRoutingModule],
 })
