@@ -7,6 +7,7 @@ import { ElectronicsComponent } from './electronics/electronics.component';
 import { MenClothingComponent } from './men-clothing/men-clothing.component';
 import { WomenClothingComponent } from './women-clothing/women-clothing.component';
 import { ProductComponent } from './product/product.component';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,6 @@ import { ProductComponent } from './product/product.component';
         WomenClothingComponent,
         ProductComponent,
     ],
-    imports: [CommonModule, CategoriesRoutingModule],
+    imports: [CommonModule, CategoriesRoutingModule, ButtonModule],
 })
 export class CategoriesModule {}

@@ -7,6 +7,10 @@ import { Product } from 'src/app/demo/interfaces/product';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
-  @Input() product!: Product[]
+  @Input() product!: Product
+
+  showProductInfo() {
+    console.log(this.product)
+  }
 
 }

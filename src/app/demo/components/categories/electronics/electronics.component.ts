@@ -19,7 +19,6 @@ export class ElectronicsComponent implements OnInit {
     this.http.get<Product[]>('https://fakestoreapi.com/products/category/electronics').subscribe(
       res => {
         this.products = res
-        console.log(res)
       }
     )
   }
